@@ -12,7 +12,7 @@ services:
       replicas: 1
       labels:
         - traefik.enable=true
-        - traefik.http.services.cors-anywhere.loadbalancer.server.port=8000
+        - traefik.http.services.cors-anywhere.loadbalancer.server.port=8080
         - traefik.http.routers.cors-anywhere.rule=Host(`cors-anywhere.edmondchuc.com`)
         - traefik.http.routers.cors-anywhere.entrypoints=http,https
         - traefik.http.routers.cors-anywhere.middlewares=redirect@file
